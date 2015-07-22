@@ -44,19 +44,18 @@ a:active {
 	.in-slide-list{
 		position:absolute;
 		top:0;
-		left:0;
-		width:100%;
+		left:50%;
+		width:percentage(350/750);
+		height:100%;
+		-webkit-transform:translateX(-50%);
+		transform:translateX(-50%);
 		li{
-			float: left;
-			margin-right:10px;
-			width:percentage(350/750);
-			height:300px;
+			position:absolute;
+			left:0;
+			top:0;
+			width:100%;
+			height:100%;
 			background:orange;
-			&.small{
-				-webkit-transform:scale(0.7);
-				-moz-transform:scale(0.7);
-				transform:scale(0.7);
-			}
 		}
 	}
 }
